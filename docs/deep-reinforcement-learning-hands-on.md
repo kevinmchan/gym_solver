@@ -33,10 +33,6 @@ sudo apt install xvfb
 sudo apt-get install ffmpeg
 ```
 
-### Goal for chapter
-
-Goal: make and record a random solver to the `CartPole-v0` environment using gym's Wrapper classes.
-
 ### Notes
 
 There are various kinds of wrappers in openai gym:
@@ -46,6 +42,8 @@ There are various kinds of wrappers in openai gym:
 - ActionWrapper: wrapper on `action` method
 
 ### Example
+
+Goal: make and record a random solver to the `CartPole-v0` environment using gym's Wrapper classes.
 
 To run:
 
