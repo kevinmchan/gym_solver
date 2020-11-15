@@ -13,7 +13,7 @@ Process for reviewing textbook chapters:
 - solve unique open-ai problem using techniques in the chapter
 
 
-## Chapter 2
+## Chapter 2 - The OpenAI Gym API
 
 ### Environment setup
 
