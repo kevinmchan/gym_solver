@@ -12,3 +12,18 @@ python-dotenv>=0.5.1
 
 # backwards compatibility
 pathlib2
+
+# rl packages
+atari-py
+gym
+numpy
+opencv-python
+tensorboard
+torch
+torchvision
+pytorch-ignite
+tensorboardX
+tensorflow
+nltk
+pybullet
+ptan
