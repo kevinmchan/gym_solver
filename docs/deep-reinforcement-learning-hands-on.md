@@ -180,6 +180,12 @@ engine.run(data=generate_batch(envs))
 
 Goal: create a GAN to produce images of an atari game screenshot
 
+To run:
+
+```bash
+python -m examples.atari_gan
+```
+
 ## Deep learning concepts
 
 ### Convolutions
