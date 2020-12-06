@@ -188,12 +188,19 @@ python -m examples.atari_gan
 
 ## Chapter 4 - Cross-entropy method
 
-The cross enthropy method:
+The cross-enthropy method:
 
 1. With a given policy, play _n_ number of episodes
 2. Take the top _p_ percentile of episodes based on total rewards
 3. Update policy using filtered episodes to predict action
 4. Repeat
+
+Ways to enhance the cross-entropy method for harder problems e.g. longer episodes, sparse rewards, only terminal rewards:
+
+- make larger batches to increase chances of getting a good example
+- discount rewards based on episode length to make shorter runs with same total rewards more valuable
+- keep strong episodes for longer to increase good examples in each training step
+- decrease learning rate to prevent oscillation for harder to train policies
 
 ### Example
 
