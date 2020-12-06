@@ -200,7 +200,7 @@ Ways to enhance the cross-entropy method for harder problems e.g. longer episode
 - make larger batches to increase chances of getting a good example
 - discount rewards based on episode length to make shorter runs with same total rewards more valuable
 - keep strong episodes for longer to increase good examples in each training step
-- decrease learning rate to prevent oscillation for harder to train policies
+- decrease learning rate to allow time to find a solution for harder to train policies
 
 ### Example
 
