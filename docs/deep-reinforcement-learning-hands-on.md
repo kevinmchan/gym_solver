@@ -186,6 +186,29 @@ To run:
 python -m examples.atari_gan
 ```
 
+## Chapter 4 - Cross-entropy method
+
+The cross enthropy method:
+
+1. With a given policy, play _n_ number of episodes
+2. Take the top _p_ percentile of episodes based on total rewards
+3. Update policy using filtered episodes to predict action
+4. Repeat
+
+### Example
+
+Goal: Solve cartpole problem using cross-entropy algorithm
+
+To run:
+
+```bash
+python -m examples.cross_entropy.cartpole
+```
+
+## Chapter 5
+
+...
+
 ## Deep learning concepts
 
 ### Convolutions
@@ -246,3 +269,13 @@ np.testing.assert_array_equal(array1, array2, err_msg=msg)
 ## Useful cv2 functions
 
 - Reshaping an image: `resized_image = cv2.resize(image, (new_height, new_width))`
+
+## Useful gym functions, methods and properties
+
+- create environment: `env = gym.make("CartPole-v0")
+- get observation shape: `obs_shape = env.observation_space.shape[0]`
+- get number of possible actions: `n_actions = env.action_space.n`
+
+## Gotchas
+
+- remember that pytorch modules expect that inputs will be in a batch; therefore, if running a single observation, need to add an extra dimension
