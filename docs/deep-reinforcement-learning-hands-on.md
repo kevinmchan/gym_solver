@@ -282,6 +282,8 @@ np.testing.assert_array_equal(array1, array2, err_msg=msg)
 - create environment: `env = gym.make("CartPole-v0")
 - get observation shape: `obs_shape = env.observation_space.shape[0]`
 - get number of possible actions: `n_actions = env.action_space.n`
+- increase the max number of steps: `env = gym.wrappers.TimeLimit(env, max_episode_steps = 100)`
+- record episode: `env = gym.wrappers.Monitor(env, directory=output_dir, force=True)`
 
 ## Gotchas
 
